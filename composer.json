@@ -1,0 +1,27 @@
+{
+    "name": "edfdans/pesquisa-ncm",
+    "description": "Esse pacote irá ajudar na pesquisa de NCM diretamente na receita federal",
+    "keywords": [
+        "consulta",
+        "receita",
+        "federal",
+        "ncm",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emerson Diego Feltrin",
+            "email": "emersondiegofeltrin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "fabpot/goutte": "2.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "edfdans\\pesquisancm\\": "src/"
+        }
+    }
+}

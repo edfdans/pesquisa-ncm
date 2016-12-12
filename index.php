@@ -1,27 +1,10 @@
-# Pesquisa NCM
-[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](http://opensource.org/licenses/MIT)
-
-Esse pacote permite pesquisar o NCM pelo código ou descrição, verifique o método:
-
-### Pesquisa pelo código
-
-```shell
 <?php
 
-$pesquisancm = new \edfdans\pesquisancm\pesquisaNCM();
-$pesquisancm->pesquisarPeloCodigo('0102.29.19');
-
-?>
-
-```
-
-### Pesquisa pela descrição
-
-```shell
-
-<?php
+require 'vendor/autoload.php';
 
 $pesquisancm = new \edfdans\pesquisancm\pesquisaNCM();
+
+//echo $pesquisancm->pesquisarPeloCodigo('0102.29.19');
 
 if (isset($_POST['descricao']) && isset($_POST['captcha']) && isset($_POST['cookie'])){
     $retorno = $pesquisancm->pesquisarPelaDescricao($_POST['descricao'], $_POST['captcha'], $_POST['cookie']);
@@ -40,5 +23,3 @@ $sessao = $pesquisancm->carregarSessao();
     <input type="hidden" name="cookie" value="<?php echo $sessao['cookie']; ?>" />
     <input type="submit" />
 </form>
-
-```
