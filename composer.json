@@ -1,5 +1,6 @@
 {
     "name": "edfdans/pesquisa-ncm",
+    "type": "library",
     "description": "Esse pacote irá ajudar na pesquisa de NCM diretamente na receita federal",
     "keywords": [
         "consulta",
