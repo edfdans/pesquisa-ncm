@@ -100,8 +100,8 @@ class pesquisaNCM {
         }
 
         return [
-            'cookie'        => $cookie,
-            'imagemCaptcha' => 'data:image/png;base64,' . base64_encode($imagem)
+            'cookie'         => $cookie,
+            'imagem-captcha' => 'data:image/png;base64,' . base64_encode($imagem)
         ];
     }
     
