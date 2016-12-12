@@ -35,7 +35,7 @@ $sessao = $pesquisancm->carregarSessao();
 
 <form action="" method="POST">
     Descrição: <input type="text" name="descricao" value="" /><br />
-    <img src="<?php echo $sessao['imagemCaptcha']; ?>" /><br />
+    <img src="<?php echo $sessao['imagem-captcha']; ?>" /><br />
     Captcha: <input type="text" name="captcha" /><br />
     <input type="hidden" name="cookie" value="<?php echo $sessao['cookie']; ?>" />
     <input type="submit" />
